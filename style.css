@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-color: #003f5c;
+    --window-color: #58508d;
+    --hover-color: #393f65;
+    --text-color: #f7f7f7;
+    --button-color: #bc5090;
+
+
+}
+
+body {
+    background-color: var(--dark-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+.title {
+    color: var(--text-color);
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+}
+
+.window {
+    background: rgb(88, 80, 141);
+    background: radial-gradient(circle, rgba(88, 80, 141, 1) 55%, rgba(188, 80, 144, 1) 100%);
+    border-radius: 5px;
+    padding: 20px;
+    width: 500px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.button-container {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.button-container button {
+    background-color: var(--button-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.button-container button:hover {
+    background-color: var(--hover-color);
+}
+
+.result {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: rgb(88, 80, 141);
+    background: linear-gradient(90deg, rgba(88, 80, 141, 1) 0%, rgba(188, 80, 144, 1) 100%);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    /* box-shadow: 3px 3px 3px 2px var(--pink); */
+    /* border: 2px solid var(--button-color); */
+
+}
+
+.result p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: var(--text-color);
+    padding: 1rem;
+    font-size: 1.7rem;
+
+}
